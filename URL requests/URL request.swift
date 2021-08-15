@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Twitter_clone_FirebaseApp: App {
+    var network = Network()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(network)
         }
     }
 }
